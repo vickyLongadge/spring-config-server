@@ -1,0 +1,2 @@
+get all the properties file in git_server folder from "https://github.com/vickyLongadge/spring-config-server.git"
+And remove 04docker folder

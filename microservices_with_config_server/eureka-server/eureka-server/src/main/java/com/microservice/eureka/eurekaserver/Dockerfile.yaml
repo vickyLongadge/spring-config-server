@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  eureka-server:
+    image: vicky/eureka-server:latest
+    ports:
+      - "8761:8761"
+    networks:
+      - currency-network
+
+  spring-configuration-server:
+    image: vicky/spring-configuration-server:latest
+    ports:
+      - "8888:8888"
+    networks:
+      - currency-network
+    depends_on:
+      - eureka-server
+    environment:
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://eureka-server:8761/eureka
+
+networks:
+  currency-network:
