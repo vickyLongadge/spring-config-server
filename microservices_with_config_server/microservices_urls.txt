@@ -1,0 +1,39 @@
+API GATEWAY
+https://www.youtube.com/watch?v=Uk1pABn4QjE
+
+EUREKA SERVER
+http://localhost:8761/
+
+CONFIGURATION SERVER(EUREKA CLIENT)
+http://localhost:8888/web-service-one/default
+
+
+
+SERVICE EXCHNAGE(EUREKA CLIENT)
+http://localhost:8000/service-exchange/from/USD/to/INR4
+
+CURRENCY CONVERSION FEIGN(EUREKA CLIENT)
+http://localhost:8000/service-conversion-feign/from/USD/to/INR/quantity/10
+
+
+
+API GATEWAY(EUREKA CLIENT)
+http://localhost:8765/spring-configuration-server/web-service-one/dev
+http://localhost:8765/web-service-one/service-exchange/from/USD/to/INR
+http://localhost:8765/web-service-two/service-conversion/from/USD/to/INR/quantity/10
+
+
+ZEPKIN
+http://localhost:9411/zipkin/
+IMAGE - openzipkin/zipkin:2.23
+
+
+Resilience4j
+https://www.youtube.com/watch?v=9AXAUlp3DBw
+
+
+
+v1                v2
+ribbon            Spring cloud loadbalancing
+zuul              Spring cloud gateway
+hystrix            Resilience4j
