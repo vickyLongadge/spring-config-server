@@ -2,6 +2,22 @@ in28min GUTHUB LINK - MICROSERVICES AND DOCKER
 https://github.com/in28minutes/spring-microservices-v2/blob/main/03.microservices/01-step-by-step-changes/microservices-v2-1.md#docker-section---connect-microservices-with-zipkin
 
 
+load balancing
+blance load between multiple instances of a micoservice
+
+
+DOCKER:
+Docker provides the concept of dockerization. Means if you have to run an application in the system so you need to multiple configuration to run the application.
+Like jdk, apache, mysql and so on. And all this process you have to do manually, and we are human and we can make mistake and it takes time.
+So to overcome this problem docker comes into the picture. It says provide whatever you want in a image file and once you run the image in any system it will do all configurations
+automatically.
+
+Docker Image - where we have all the configuration related properties. Image is static
+Docker container - Once you run the image it becomes container. Container is dynamic
+Docker Engine - Is used to host the container
+Docker compose - where you can run your multiples images with a single command. 
+
+
 
 -------DOCKER-------
 
